@@ -37,7 +37,15 @@ The application is based on another [project](https://github.com/ArianaBik96/Cus
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
+### Project structure
 
+    ├─Churning
+    │  ├─data
+    │  └─src
+    ├─images
+    └─mlflow_docker
+
+The Churning and mlflow_docker direcotries contain the Dockerfile for the two different containers we want to build and deploy.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -81,14 +89,26 @@ When you go to http://localhost:5000, you'll see an output similar to this:
 
 ![MLFlow](images/mlflow.jpg)
 
-I added volumes, which allow you to change the files in /Churning/src and Churning/data
 
+### Volumes
+I added volumes for the application container, which will allow you to change the application files. 
+|Local directory|Docker directory|
+|---|---|
+|/Churning/src|/src|
+|/Churning/data|/data|
+
+This allows me to change the application files to allow tracking and logging of other experiments and models if necessary. Take note that the application runs the classifiers.py file from the Churning/src folder so make sure the file you want to run has the same name. 
 
 <!-- ROADMAP -->
 ## Roadmap
 
 * Deployment in Cloud
 
+
+
+## Timeline
+
+This was done in 5 days, including the time neede to learn both MLFlow and Terraform.
 
 <!-- CONTACT -->
 ## Contact
