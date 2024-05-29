@@ -39,13 +39,25 @@ The application is based on another [project](https://github.com/ArianaBik96/Cus
 
 ### Project structure
 
+    │  main.tf
+    │  README.md
+    │
     ├─Churning
+    │  │  Dockerfile
+    │  │  requirements.txt
+    │  │
     │  ├─data
+    │  │      BankChurners.csv
+    │  │
     │  └─src
-    ├─images
+    │         classifiers.py
+    │         preprocessing.py
+    │      
     └─mlflow_docker
+           Dockerfile
+           requirements.txt
 
-The Churning and mlflow_docker direcotries contain the Dockerfile for the two different containers we want to build and deploy.
+The Churning and mlflow_docker directories contain the Dockerfile for the two different containers we want to build and deploy.
 
 <!-- GETTING STARTED -->
 ## Getting Started
