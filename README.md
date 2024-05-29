@@ -36,6 +36,7 @@ The application is based on another [project](https://github.com/ArianaBik96/Cus
 ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 ### Project structure
 
@@ -114,13 +115,21 @@ This allows me to change the application files to allow tracking and logging of 
 <!-- ROADMAP -->
 ## Roadmap
 
-* Deployment in [Cloud](https://github.com/DedeyJ/terraform-cloud)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
+* Deployment in AWS Cloud: [Repo here](https://github.com/DedeyJ/terraform-cloud)
+
+    - Used a template to deploy MLFlow using docker and Terraform in the AWS Cloud environment.
+    - Use of ECR and ECS to deploy Docker Images running MLFlow in AWS.
+    - Added own code to automate building and pushing of Docker Image using Terraform.
+
+* Look into deployment in AWS Cloud using EC2 instances instead of Docker.
 
 
 
 ## Timeline
 
-This was done in 5 days, including the time neede to learn both MLFlow and Terraform.
+This was done in 5 days, including the time needed to learn both MLFlow and Terraform.
 
 <!-- CONTACT -->
 ## Contact
